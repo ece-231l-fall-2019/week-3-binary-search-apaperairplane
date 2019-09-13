@@ -1,27 +1,23 @@
 ## RESULTS
 
------------------------------------------
-### File results before optimizations
-* Found 237/1999 values.
-* Time to linear search all values: 2.56788s
-* Found 237/1999 values.
-* Time to linear search all values (pointers): 1.68575s
-* Found 237/1999 values.
-* Time to binary search all values: 0.000583588s
-* Found 237/1999 values.
-* Time to binary search all values (pointers): 0.000581479s
-
-### File results after optimizations
-* Found 237/1999 values.
-* Time to linear search all values: 1.44601s
-* Found 237/1999 values.
-* Time to linear search all values (pointers): 1.09038s
-* Found 237/1999 values.
-* Time to binary search all values: 0.000419464s
-* Found 237/1999 values.
-* Time to binary search all values (pointers): 0.000458268s
-
----------------------------------------
+# Before Optimizations
+---------------------------------
+|Algorithm        |Time Taken   |
+|-----------------|-------------|
+|Linear           |2.56788s     |
+|Linear (pointers)|1.68575s     |
+|Binary           |0.000583588s |
+|Binary (pointers)|0.000581479s |
+---------------------------------
+# After Optimizations
+---------------------------------
+|Algorithm        |Time Taken   |
+|-----------------|-------------|
+|Linear           |1.44601s     |
+|Linear (pointers)|1.09038s     |
+|Binary           |0.000419464s |
+|Binary (pointers)|0.000458268s |
+---------------------------------
 
 ## SUMMARY
 
