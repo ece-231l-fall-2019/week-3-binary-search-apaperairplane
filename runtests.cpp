@@ -4,6 +4,7 @@
 
 #include "Timer.h"
 #include "search.h"
+#include "sort.h"
 
 void readFile(std::string name, std::vector<int>& v)
 {
@@ -96,6 +97,14 @@ int main()
                         << search.size() << " values." << std::endl;
         }
 
+        {
+                Timer timer("Time to sort array: ");
+		bubble_sort(search.data(), search.data() + search.size());
+	}
+	
+	for (unsigned int i = 0; i < search.size(); i++){
+		std::cout << search.at(i) << std::endl;
+	}
 	return 0;
 }
 

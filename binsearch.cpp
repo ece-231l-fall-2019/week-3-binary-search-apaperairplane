@@ -27,11 +27,9 @@ bool binarySearch(const std::vector<int>& set, int value)
 bool binarySearch(const int *begin, const int *end, int value)
 {
 	// Done?
-	
-	while(true){
 		const int *middle = begin + (end - begin) / 2;
 		if(middle == end)
-			break;
+			return false;
 		if(*middle == value){
 			return true;
 		}else if(*middle < value){
@@ -39,7 +37,7 @@ bool binarySearch(const int *begin, const int *end, int value)
 		}else{ //if(*middle > value){
 			end = middle;
 		}
-	}
+		return binarySearch(begin, end, value);
 	return false;
 }
 
